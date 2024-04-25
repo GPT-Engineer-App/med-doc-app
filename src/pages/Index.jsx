@@ -49,9 +49,11 @@ const Index = () => {
           </Box>
 
           <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
-            <Flex alignItems="center">
-              <Text fontSize="lg">Physical Examination</Text>
-              <Input placeholder="Enter details of physical examination" ml={2} />
+            <Flex alignItems="center" direction="column">
+              <Text fontSize="lg" mb={2}>
+                Physical Examination
+              </Text>
+              <Input type="file" accept=".pdf" />
             </Flex>
           </Box>
           <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
