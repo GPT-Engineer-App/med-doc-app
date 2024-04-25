@@ -49,9 +49,21 @@ const Index = () => {
           </Box>
 
           <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
-            <Flex alignItems="center" justifyContent="space-between">
-              <Text fontSize="xl">Patient History</Text>
-              <FaClipboardList />
+            <Flex alignItems="center">
+              <Text fontSize="lg">Physical Examination</Text>
+              <Input placeholder="Enter details of physical examination" ml={2} />
+            </Flex>
+          </Box>
+          <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
+            <Flex alignItems="center">
+              <Text fontSize="lg">Patient History</Text>
+              <Input placeholder="Enter patient history details" ml={2} />
+            </Flex>
+          </Box>
+          <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
+            <Flex alignItems="center">
+              <Text fontSize="lg">Family History</Text>
+              <Input placeholder="Enter family history details" ml={2} />
             </Flex>
           </Box>
         </VStack>
