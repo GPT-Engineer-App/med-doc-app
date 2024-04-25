@@ -51,9 +51,9 @@ const Index = () => {
           <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
             <Flex alignItems="center" direction="column">
               <Text fontSize="lg" mb={2}>
-                Physical Examination (Please upload OCR-processed text)
+                Physical Examination
               </Text>
-              <Input type="text" placeholder="Paste OCR text here" />
+              <Input type="file" accept=".pdf" />
             </Flex>
           </Box>
           <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
