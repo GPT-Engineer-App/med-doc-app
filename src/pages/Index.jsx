@@ -17,12 +17,6 @@ const Index = () => {
       <Stack spacing={8} my={8}>
         <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
           <Flex alignItems="center">
-            <FaSearch />
-            <Input placeholder="Search patient records" ml={2} />
-          </Flex>
-        </Box>
-        <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
-          <Flex alignItems="center">
             <Text fontSize="lg">First Name</Text>
             <Input placeholder="Enter first name" ml={2} />
           </Flex>
