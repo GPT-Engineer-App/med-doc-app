@@ -21,6 +21,24 @@ const Index = () => {
             <Input placeholder="Search patient records" ml={2} />
           </Flex>
         </Box>
+        <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
+          <Flex alignItems="center">
+            <Text fontSize="lg">First Name</Text>
+            <Input placeholder="Enter first name" ml={2} />
+          </Flex>
+        </Box>
+        <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
+          <Flex alignItems="center">
+            <Text fontSize="lg">Last Name</Text>
+            <Input placeholder="Enter last name" ml={2} />
+          </Flex>
+        </Box>
+        <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
+          <Flex alignItems="center">
+            <Text fontSize="lg">Birthdate</Text>
+            <Input placeholder="YYYY-MM-DD" ml={2} type="date" />
+          </Flex>
+        </Box>
 
         <VStack spacing={4} align="stretch">
           <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
