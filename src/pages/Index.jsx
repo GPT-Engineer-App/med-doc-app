@@ -63,11 +63,8 @@ const Index = () => {
         </VStack>
       </Stack>
 
-      <Flex justifyContent="center" mt={10} mb={10}>
+      <Flex justifyContent="center" mt={10}>
         <Image src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxkb2N0b3J8ZW58MHx8fHwxNzE0MDQ0MTk5fDA&ixlib=rb-4.0.3&q=80&w=1080" borderRadius="full" boxSize="150px" />
-        <Button colorScheme="teal" onClick={() => console.log("Emailing form data to victorroy@gmail.com")}>
-          Submit
-        </Button>
       </Flex>
     </Container>
   );
