@@ -1,8 +1,28 @@
 // Complete the Index page component for a doctor's application
-import { Box, Button, Container, Flex, Heading, Image, Input, Stack, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Heading, Image, Input, Stack, Text, VStack, useToast } from "@chakra-ui/react";
 import { FaUserMd, FaSearch, FaCalendarAlt, FaClipboardList } from "react-icons/fa";
+import { useRef, useState } from "react";
+
+// Removed axios import as external dependencies are not allowed
 
 const Index = () => {
+  const [physicalExam, setPhysicalExam] = useState("");
+  const fileInputRef = useRef(null);
+
+  const handleFileSelect = () => {
+    fileInputRef.current.click();
+  };
+
+  const handleFileChange = async (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      // Simulate file processing and setting the result
+      setTimeout(() => {
+        setPhysicalExam("Simulated content from PDF file.");
+      }, 1000);
+    }
+  };
+
   return (
     <Container maxW="container.xl">
       <Flex justifyContent="space-between" alignItems="center" py={4}>
@@ -45,7 +65,11 @@ const Index = () => {
           <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
             <Flex alignItems="center">
               <Text fontSize="lg">Physical Examination</Text>
-              <Input placeholder="Enter details of physical examination" ml={2} />
+              <Input placeholder="Enter details of physical examination" ml={2} value={physicalExam} />
+              <Button onClick={handleFileSelect} ml={2}>
+                Upload PDF
+              </Button>
+              <input type="file" ref={fileInputRef} onChange={handleFileChange} style={{ display: "none" }} accept=".pdf" />
             </Flex>
           </Box>
           <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
