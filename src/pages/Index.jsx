@@ -56,13 +56,6 @@ const Index = () => {
 
         <VStack spacing={4} align="stretch">
           <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
-            <Flex alignItems="center" justifyContent="space-between">
-              <Text fontSize="xl">Upcoming Appointments</Text>
-              <FaCalendarAlt />
-            </Flex>
-          </Box>
-
-          <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
             <Flex alignItems="center">
               <Text fontSize="lg">Physical Examination</Text>
               <Input placeholder="Enter details of physical examination" ml={2} value={physicalExam} />
